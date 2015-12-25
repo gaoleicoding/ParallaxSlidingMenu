@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="aa_black">#aa000000</color>
+    <color name="white">#ffffff</color>
+    <color name="menuBgColor">#262533</color>
+    <color name="contentTitleColor">#636373</color>
+    <color name="contentBgColor">#e9ebec</color>
+    <color name="gray_bg_color">#ebebeb</color>
+    <color name="custom_line_circle_bg">#ffac74</color>
+    <color name="custom_online_circle_bg">#ff5342</color>
+    <color name="problem_feedback_circle_bg">#ff77a0</color>
+    <color name="horizontal_divider_bg">#d9d9d9</color>
+    <color name="item_selected_gray">#d9d9d9</color>
+    <color name="color_ff77a0">#ff77a0</color>
+    <color name="color_2f3949">#2f3949</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_green">#00ff00</color>
+    <color name="color_dc353b">#dc353b</color>
+<color name="bb_black">#bb000000</color>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.NoTitleBar">
+        <!-- API 14 theme customizations can go here. -->
+       <!--  <item name="android:windowAnimationStyle">@style/AnimFade2</item> -->
+    </style>
+ <style name="AnimFade2" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@animator/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@animator/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@animator/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@animator/slide_in_from_left</item>
+    </style>
+       <style name="menu_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/bb_black</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
