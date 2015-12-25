@@ -66,7 +66,7 @@
                 android:textSize="18sp"
                 android:padding="5dp"
                 android:layout_centerInParent="true" />
-
+           <!--    下面布局是为了遮住 主题内容，点击主题内容边缘关闭菜单，方便操作 -->
             <RelativeLayout
                 android:id="@+id/shadow_layout"
                 android:layout_width="match_parent"
