@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gaolei.slidingmenu.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#19b4ed"
+    >
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:onClick="finishActivity"
+            android:src="@drawable/left_arrow_icon" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/message"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@color/white">
+      <ListView
+          android:id="@+id/wxmessage_listview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:cacheColorHint="#00000000"
+          android:divider="@color/contentBgColor"
+          android:dividerHeight="1dp"
+          android:fadingEdge="none"
+           />
+  </RelativeLayout>
+
+</com.gaolei.slidingmenu.CustomRelativeLayout>

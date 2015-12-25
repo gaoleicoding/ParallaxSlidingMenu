@@ -7,7 +7,7 @@
     -->
     <style name="AppBaseTheme" parent="android:Theme.NoTitleBar">
         <!-- API 14 theme customizations can go here. -->
-       <!--  <item name="android:windowAnimationStyle">@style/AnimFade2</item> -->
+        <item name="android:windowAnimationStyle">@style/AnimSlide</item> 
     </style>
  <style name="AnimFade2" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@animator/slide_in_from_right</item>
@@ -21,5 +21,12 @@
         <item name="android:textColor">@color/bb_black</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="AnimSlide" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@animator/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@animator/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@animator/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@animator/slide_in_from_left</item>
     </style>
 </resources>

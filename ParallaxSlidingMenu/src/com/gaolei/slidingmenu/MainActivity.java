@@ -1,16 +1,15 @@
 package com.gaolei.slidingmenu;
 
-import com.example.zhy_slidingmenu.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
+
+import com.example.zhy_slidingmenu.R;
 
 public class MainActivity extends Activity
 {
@@ -37,6 +36,9 @@ public class MainActivity extends Activity
 	public void toggleMenu(View view)
 	{
 		mMenu.toggle();
+	}
+	public void skip(View view){
+		startActivity(new Intent(this,OtherActivity.class));
 	}
 
 }

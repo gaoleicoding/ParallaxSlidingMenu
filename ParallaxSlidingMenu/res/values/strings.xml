@@ -8,4 +8,6 @@
   <string name="message">消息</string>
     <string name="knowledge_library">知识库</string>
     <string name="custom_service">客服</string>
+    <string name="skip">点击跳转到另一个Activity</string>
+    <string name="other_activity">吃得苦中苦\n方为人上人</string>
 </resources>

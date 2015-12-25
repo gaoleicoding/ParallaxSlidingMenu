@@ -9,11 +9,10 @@ package com.example.zhy_slidingmenu;
 
 public final class R {
     public static final class animator {
-        public static final int push_in_from_up=0x7f040000;
-        public static final int slide_in_from_left=0x7f040001;
-        public static final int slide_in_from_right=0x7f040002;
-        public static final int slide_out_to_left=0x7f040003;
-        public static final int slide_out_to_right=0x7f040004;
+        public static final int slide_in_from_left=0x7f040000;
+        public static final int slide_in_from_right=0x7f040001;
+        public static final int slide_out_to_left=0x7f040002;
+        public static final int slide_out_to_right=0x7f040003;
     }
     public static final class attr {
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -65,38 +64,47 @@ containing a value of this type.
         public static final int expand_menu=0x7f020001;
         public static final int ic_launcher=0x7f020002;
         public static final int img_frame_background=0x7f020003;
-        public static final int menu_cs_icon=0x7f020004;
-        public static final int menu_default_photo2=0x7f020005;
-        public static final int menu_knowledge_icon=0x7f020006;
-        public static final int menu_message_icon=0x7f020007;
-        public static final int shadow=0x7f020008;
+        public static final int left_arrow_icon=0x7f020004;
+        public static final int menu_cs_icon=0x7f020005;
+        public static final int menu_default_photo2=0x7f020006;
+        public static final int menu_knowledge_icon=0x7f020007;
+        public static final int menu_message_icon=0x7f020008;
+        public static final int shadow=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0014;
-        public static final int balance=0x7f0a0007;
+        public static final int action_settings=0x7f0a001a;
+        public static final int balance=0x7f0a0008;
         public static final int content_title_layout=0x7f0a0001;
-        public static final int custom_service=0x7f0a0010;
+        public static final int custom_service=0x7f0a0011;
         public static final int id_menu=0x7f0a0000;
-        public static final int knowledge_library=0x7f0a000d;
+        public static final int knowledge_library=0x7f0a000e;
         public static final int left_menu_icon=0x7f0a0002;
-        public static final int menu_cs_icon=0x7f0a000f;
-        public static final int menu_cs_layout=0x7f0a000e;
-        public static final int menu_knowledge_icon=0x7f0a000c;
-        public static final int menu_knowledge_layout=0x7f0a000b;
-        public static final int menu_message_icon=0x7f0a0009;
-        public static final int menu_message_layout=0x7f0a0008;
-        public static final int menu_setting_icon=0x7f0a0012;
-        public static final int menu_setting_layout=0x7f0a0011;
-        public static final int message=0x7f0a000a;
-        public static final int person_photo=0x7f0a0005;
+        public static final int menu_cs_icon=0x7f0a0010;
+        public static final int menu_cs_layout=0x7f0a000f;
+        public static final int menu_knowledge_icon=0x7f0a000d;
+        public static final int menu_knowledge_layout=0x7f0a000c;
+        public static final int menu_message_icon=0x7f0a000a;
+        public static final int menu_message_layout=0x7f0a0009;
+        public static final int menu_setting_icon=0x7f0a0013;
+        public static final int menu_setting_layout=0x7f0a0012;
+        public static final int message=0x7f0a000b;
+        public static final int message_title=0x7f0a0019;
+        public static final int parent_layout=0x7f0a0015;
+        public static final int person_photo=0x7f0a0006;
         public static final int search_edit=0x7f0a0003;
-        public static final int setting=0x7f0a0013;
-        public static final int shadow_layout=0x7f0a0004;
-        public static final int user_name=0x7f0a0006;
+        public static final int setting=0x7f0a0014;
+        public static final int shadow_layout=0x7f0a0005;
+        public static final int skip=0x7f0a0004;
+        public static final int title=0x7f0a0017;
+        public static final int title_layout=0x7f0a0016;
+        public static final int user_name=0x7f0a0007;
+        public static final int wxmessage_listview=0x7f0a0018;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int menu_layout=0x7f030001;
+        public static final int message_activity=0x7f030002;
+        public static final int wxmessage_item=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -109,16 +117,17 @@ containing a value of this type.
         public static final int hello_world=0x7f070002;
         public static final int knowledge_library=0x7f070005;
         public static final int message=0x7f070004;
+        public static final int other_activity=0x7f070008;
+        public static final int skip=0x7f070007;
     }
     public static final class style {
         public static final int AnimFade2=0x7f080001;
+        public static final int AnimSlide=0x7f080003;
         /** 
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
     
- API 14 theme customizations can go here. 
-  <item name="android:windowAnimationStyle">@style/AnimFade2</item> 
          */
         public static final int AppBaseTheme=0x7f080000;
         public static final int menu_text_style=0x7f080002;
