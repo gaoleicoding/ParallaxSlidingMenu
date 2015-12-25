@@ -1,11 +1,11 @@
-<com.example.zhy_slidingmenu.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/id_menu"
+<com.gaolei.slidingmenu.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:zhy="http://schemas.android.com/apk/res/com.example.zhy_slidingmenu"
+    android:id="@+id/id_menu"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
-   android:fitsSystemWindows="true"
     android:background="@color/color_dc353b"
+    android:fitsSystemWindows="true"
     android:scrollbars="none"
     zhy:rightPadding="100dp" >
 
@@ -14,22 +14,22 @@
         android:layout_height="fill_parent"
         android:orientation="horizontal" >
 
-        <include layout="@layout/menu_layout" />
+        <include layout="@layout/menu_layout" 
+            android:clickable="true"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff"
-             >
+            android:background="#ffffff" >
 
-          <LinearLayout
+            <LinearLayout
                 android:id="@+id/content_title_layout"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/color_dc353b"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <ImageView
                     android:id="@+id/left_menu_icon"
@@ -51,10 +51,17 @@
                     android:imeOptions="actionSearch"
                     android:padding="5dp"
                     android:singleLine="true" />
-
             </LinearLayout>
 
-        </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/shadow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/content_title_layout"
+                android:onClick="toggleMenu"
+                android:visibility="gone" >
+            </RelativeLayout>
+        </RelativeLayout>
     </LinearLayout>
 
-</com.example.zhy_slidingmenu.SlidingMenu>
+</com.gaolei.slidingmenu.SlidingMenu>
