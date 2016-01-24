@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ParallaxSlidingMenu(ViewGroup)</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="menu_button_desc">Menu Button</string>
+    <string name="diary_icon_desc">Diary Icon</string>
+    <string name="diary_text">Menu</string>
+</resources>

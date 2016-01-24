@@ -1,0 +1,20 @@
+<com.noter.layout.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:id="@+id/slide_layout"
+    tools:context=".MainActivity" >
+
+    
+    
+    <!-- <com.noter.layout.SlideLayout
+        android:id="@+id/slide_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" > -->
+        
+        <include android:id="@+id/menu" layout="@layout/menu" />
+        <include android:id="@+id/content" layout="@layout/content_diary" />
+    
+    </com.noter.layout.SlideLayout>
+
+<!-- </RelativeLayout> -->

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="fill_parent"
+    android:background="#00ccff" >
+
+    <LinearLayout
+        android:id="@+id/diary"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:background="#444444" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_diary"
+            android:contentDescription="@string/diary_icon_desc" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="@string/diary_text" />
+    </LinearLayout>
+    
+</RelativeLayout>
