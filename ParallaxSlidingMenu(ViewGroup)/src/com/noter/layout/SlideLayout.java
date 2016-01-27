@@ -137,11 +137,12 @@ public class SlideLayout extends ViewGroup {
 			}
 //			这里是判断打手势滑动开菜单时即向右滑动菜单向右滑动 实现视觉差滑动效果，menuWidth+getScrollX()是菜单滑动时X的变化，手离开后就要在这里监听，0.7是可以根据需求改动
 		
-			ViewHelper.setTranslationX(getChildAt(0), (menuWidth+getScrollX())* 0.7f);
+			
 			if (deltaX != 0) {
 				scrollBy(deltaX, 0);
 			}
-			
+			//这句话一定要放到scrollBy后面 不然你快速滑动左边会有空白闪现
+			ViewHelper.setTranslationX(getChildAt(0), (menuWidth+getScrollX())* 0.7f);
 			mLastX = x;
 			
 			break;
